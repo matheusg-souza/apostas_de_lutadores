@@ -108,7 +108,7 @@ document.getElementById("btnSimularLuta").addEventListener("click", () => {
 
     if (ganhadores.length > 0) {
         const totalGanhadores = ganhadores.reduce((sum, g) => sum + g.valor, 0);
-        const premioPorReal = (totalApostado * 0.8) / totalGanhadores; // Casa retém 20%
+        const premioPorReal = (totalApostado * 0.85) / totalGanhadores; // Casa retém 15%
 
         const premiosDiv = document.getElementById("premiosDistribuidos");
         premiosDiv.innerHTML = "<h4>Prêmios:</h4>";

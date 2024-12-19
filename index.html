@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de Apostas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Casa de Apostas</h1>
+
+        <!-- Cadastro de Lutadores -->
+        <section class="cadastro">
+            <h3>Cadastrar Luta</h3>
+            <div class="form-group">
+                <label for="lutador1">Lutador 1</label>
+                <input type="text" id="lutador1" placeholder="Nome do Lutador 1">
+            </div>
+            <div class="form-group">
+                <label for="lutador2">Lutador 2</label>
+                <input type="text" id="lutador2" placeholder="Nome do Lutador 2">
+            </div>
+            <button id="btnCadastrarLuta">Cadastrar Luta</button>
+            <p id="lutaAtual" class="text-success"></p>
+        </section>
+
+        <!-- Realizar Apostas -->
+        <section class="realizar-apostas">
+            <h3>Realizar Aposta</h3>
+            <div class="form-group">
+                <label for="nomeApostador">Nome do Apostador</label>
+                <input type="text" id="nomeApostador" placeholder="Nome do Apostador">
+            </div>
+            <div class="form-group">
+                <label for="valorAposta">Valor da Aposta</label>
+                <input type="number" id="valorAposta" placeholder="Valor da Aposta">
+            </div>
+            <div class="form-group">
+                <label for="lutadorApostado">Lutador Apostado</label>
+                <select id="lutadorApostado">
+                    <option value="">Selecione um Lutador</option>
+                </select>
+            </div>
+            <button id="btnApostar">Apostar</button>
+        </section>
+
+        <!-- Exibir Apostas -->
+        <section class="exibir-apostas">
+            <h3>Lista de Apostas</h3>
+            <div id="listaApostas" class="border">
+                <p>Nenhuma aposta realizada ainda.</p>
+            </div>
+        </section>
+
+        <!-- Escolher e Simular Vencedor -->
+        <section class="escolher-vencedor">
+            <h3>Escolher Vencedor</h3>
+            <div class="form-group">
+                <label for="selectVencedor">Selecione um Lutador</label>
+                <select id="selectVencedor">
+                    <option value="">Selecione um Lutador</option>
+                </select>
+            </div>
+            <button id="btnSimularLuta">Simular Luta</button>
+            <p id="resultadoLuta" class="text-info"></p>
+        </section>
+
+        <!-- Resultados -->
+        <section>
+            <h3>Prêmios Distribuídos</h3>
+            <div id="premiosDistribuidos" class="border">
+                <p>Nenhum prêmio distribuído ainda.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+/* Estilo Geral */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/* Cabeçalhos */
+h1, h3 {
+    color: #6fc473;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Seções */
+section {
+    margin-bottom: 30px;
+}
+
+/* Botões */
+button {
+    appearance: none;
+    background-color: #2ea44f;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    padding: 6px 16px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #2c974b;
+}
+
+button:active {
+    background-color: #298e46;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+button:focus {
+    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    outline: none;
+}
+
+/* Inputs */
+input, select {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+    margin-bottom: 15px;
+}
+
+input:focus, select:focus {
+    outline: none;
+}
+
+/* Labels */
+label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Divs com borda */
+.border {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+/* Apostas */
+#listaApostas div, #premiosDistribuidos div {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #e8f5e9;
+    border: 1px solid #c8e6c9;
+}
+
+/* Mensagens */
+.text-success {
+    font-weight: bold;
+}
+
+.text-info {
+    font-style: italic;
+}
